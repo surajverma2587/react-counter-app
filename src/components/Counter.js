@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Number from "./Number";
 
 class Counter extends React.Component {
   constructor(props) {
@@ -55,7 +56,7 @@ class Counter extends React.Component {
             </Button>
           </Col>
           <Col>
-            <h4>Count: {this.state.count}</h4>
+            <Number value={this.state.count} />
           </Col>
           <Col>
             <Button variant="danger" size="lg" block onClick={this.decrement}>
